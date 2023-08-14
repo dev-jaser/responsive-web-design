@@ -1,0 +1,102 @@
+@media (max-width:1169px){#navbar{right: 0;}}
+.title-description {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom:.475rem;
+  padding-top:.125rem;
+  font-size:22px;
+  font-family: courier new;
+  text-align: center;
+  display: inline-block;
+  background-color: #111111;
+  color: rgba(90, 255, 255,100%);
+  border-bottom:3.5px double rgba(90, 255, 255,100%);
+  border-right:3.5px double rgba(90, 255, 255,100%);
+  border-left:3.5px double rgba(90, 255, 255,100%);
+}
+* {
+  list-style-type:none;
+}
+
+h3 {
+  border: 4.5px double #111232;
+  text-align: center;
+  background: 
+  repeating-linear-gradient(25deg,rgba(170,155,15,50%),#fffacc 85%,rgba(180, 150, 60,65%));
+}
+#title {
+  display: contents;
+  width: 100%;
+  font-family: tahoma;
+  font-size: 32px;
+  margin: .04px;
+  font-weight: bold;
+  color: #111232;
+}
+
+#head-sec1 {
+  display: block;
+  margin: 0;
+  padding: 2.5px;
+  font-family: Courier New;
+  font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+  color: rgba(90, 255, 255,100%);
+  background-color: black;
+  border: 3.5px double rgba(90, 255, 255,100%);
+}
+
+html {
+  background: 
+  repeating-linear-gradient(45deg,rgba(70,55,15,100%),#fffacc 95%,rgba(180, 170, 70,95%));
+}
+
+.description {
+  display: block;
+  font-family: serif;
+  background-color: #111 ;
+  color: rgba(100, 255, 255,100%);
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin: 0;
+}
+
+#head-sec2 {
+  margin: 0;
+  font-family: courier new;
+  font-weight: normal;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(150, 255, 255,100%);
+  background-color: #111123;
+}
+a:hover {
+  font-family: courier new;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24.5px;
+  color:rgba(150, 255, 255,100%);
+}
+a {
+  font-family: Lucida Console;
+  width:100%;
+  display: contents;
+  text-align:left;
+  font-size:24px;
+  color:#111232;
+}
+code {
+  display: block;
+  align-items: center;
+  font-size: 12px;
+  font-family: tahoma;
+  font-weight: bold;
+  background-color: #fff999;
+  color: #112;
+}
