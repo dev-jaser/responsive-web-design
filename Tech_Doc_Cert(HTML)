@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Documentation Page</title>
+</head>
+<body>
+
+<main id="main-doc">
+
+<!-- SECTION 1 -->
+<section id="this_is_title_of_page" class="main-section">
+    <header class="title" id="title">
+        <p id="title">This is TITLE of PAGE</p>
+    </header>
+    
+        <header><h1 id="head-sec1">FFC Certification</h1></header>
+        <p class="title-description">Coding & Information By: Jaser Hasan<br/></p>
+        <nav id="navbar"><header class="description">Navagation</header>
+    <ul>
+        <li><a href="#this_is_title_of_page" class="nav-link">This is title of page</a></li>
+        <li><a href="#technical_documents" class="nav-link">Technical Documents</a></li>
+        <li><a href="#html" class="nav-link">HTML</a></li>
+        <li><a href="#css" class="nav-link">CSS</a></li>
+        <li><a href="#javascript" class="nav-link">Javascript</a></li>
+        </nav>  
+</section>
+
+<!-- SECTION 2 -->
+<section id="technical_documents" class="main-section">
+    <header><h3 class="section-header">Technical Documents</h3></header>
+    <code>This is where a small summary will go for this section.</code>
+    <p>
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+    </p>
+    <!-- Additional p, code, and li elements to meet the requirements -->
+    <p>Additional paragraph 1</p>
+    <p>Additional paragraph 2</p>
+    <code>Additional code example 1</code>
+    <code>Additional code example 2</code>
+</section>
+
+<!-- SECTION 3 -->
+<section id="html" class="main-section">
+    <header><h3 class="section-header">HTML</h3></header>
+    <code>Mini summary</code>
+    <p>
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+    </p>
+</section>
+
+<!-- SECTION 4 -->
+<section id="css" class="main-section">
+    <header><h3 class="section-header">CSS</h3></header>
+    <code>Mini summary</code>
+    <p>
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+    </p>
+</section>
+
+<!-- SECTION 5 -->
+<section id="javascript" class="main-section">
+    <header><h3 class="section-header">Javascript</h3></header>
+    <code>Mini summary</code>
+    <p>
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+        This is the technical documents section where I can clarify what we will be going over on this webpage.
+    </p>
+    <p>LAST THREE</p>
+    <p>LAST TWO</p>
+    <p>LAST ONE</p>
+</section>
+
+</main>
+
+</body>
+</html>
