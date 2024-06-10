@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+    background-color: #f2efee;
+  }
+  
+  main {
+    padding: 2em;
+    background-color: #e3e3e3;
+    margin-left: 160px;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    color: #555555;
+    background-image: url(images/mandala2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  p {
+    text-indent: 2em;
+  }
+  
+  form {
+    background-color: #EAEAEA;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 350px;
+  }
+  
+  label {
+    float: left;
+    display: block;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+  
+  input {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  textarea {
+    margin-top: 10px;
+    width: 39.75%;
+    display: block;
+  }
+  
+  submit {
+    margin-left: 110px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, Times New Roman, serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url("images/lotus bw.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 6px;
+  }
+  
+  footer {
+    background-color: #0d6950;
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px 0 15px;
+  }
+  
+  .companyName {
+    color: #3c866d;
+  }
+  
+  nav {
+    background-color: #b6e3d4;
+    font-size: 1.25em;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 150px;
+  }
+  
+  nav a {
+    color: #0d6950;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid #0d6950;
+  }
+  
+  
+  
+  nav a:hover {
+    background-color: #0d6950;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav a:active {
+    color: limegreen;
+  }
+  
+  #floatright {
+    float: right;
+    margin: 5px;
+  }
+  
+  #schedule {
+    background-color: #B4766B;
+    background-image: linear-gradient(#B4766B, #6a4242);
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+    border-radius: 50px;
+    box-shadow: 5px black;
+  }
+  
+  #schedule a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #wrapper {
+    background-color: #b6e3d4;
+    width: 87.5%;
+    margin: auto;
+    box-shadow: 3px #6a4242;
+  }
+  
+  #firstList {
+    color: #B4766B;
+  }
+  
+  #imageHeader {
+    background-color: #fafcf1;
+    background-image: url(images/headerbackimg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100px;
+    line-height: 600%;
+    text-indent: 1em;
+    border-bottom: 3px solid #6a4242;
+  }
+  
+  #imageHeader h1 {
+    letter-spacing: 0.1em;
+  
+    #hdrWelcome {
+      opacity: 70%;
+    }
