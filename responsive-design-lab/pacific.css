@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #EAEAEA;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #wrapper {
+    margin: auto;
+    width: 80%;
+    border: 1px solid darkblue;
+    box-shadow: 3px 3px darkblue;
+    background-color: #90C7E3;
+    background-image: linear-gradient(to bottom, #FFFFFF, #09C7E3);
+  }
+  
+  header {
+    background-color: #002171;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header a:link {
+    color: #FFFFFF;
+  }
+  
+  header a:visited {
+    color: #FFFFFF;
+  }
+  
+  header a:hover {
+    color: #90C7E3;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0.5em 0 0.5em 0;
+    letter-spacing: 0.25em;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  nav {
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    font-size: 120%;
+    height: 100%;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+    font-size: 1.2em;
+  }
+  
+  nav li {
+    border-bottom: 1px solid darkblue;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:link {
+    color: #5C7FA3;
+  }
+  
+  nav a:visited {
+    color: #344873;
+  }
+  
+  nav a:hover {
+    color: #A52A2A;
+  }
+  
+  main {
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    display: block;
+    overflow: auto;
+    grid-area: main;
+    width: 100%;
+  }
+  
+  h2 {
+    color: #1976D2;
+    text-shadow: 1px 1px #CCCCCC;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  h3 {
+    color: #000033;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  main ul {
+    list-style-image: url(marker.gif);
+  }
+  
+  dt {
+    color: #002171;
+  }
+  
+  footer {
+    background-color: #FFFFFF;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 2em;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  .resort {
+    color: #1976D2;
+    font-weight: bold;
+  }
+  
+  #contact {
+    font-size: 90%;
+  }
+  
+  #homehero {
+    height: 300px;
+    background-image: url(coast2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+  }
+  
+  
+  .hero {
+    grid-area: hero;
+    width: 100%;
+  }
+  
+  #yurthero {
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+  }
+  
+  #trailhero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  @media screen and (min-width: 600px) {
+  
+    nav ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  
+    nav li {
+      border-bottom: none;
+    }
+  
+    section {
+      margin: 0 2em;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .flow {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .flow section {
+      flex: 0 0 calc(33.333% - 2em); 
+      min-height: auto;
+      margin: 0 1em;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    #wrapper {
+      margin: 0 auto;
+      width: 80%;
+      border: 1px solid darkblue;
+      box-shadow: 3px 3px darkblue;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "nav hero"
+        "nav main"
+        "nav footer";
+      grid-template-columns: 180px 3fr;
+      grid-template-rows: auto auto auto auto;
+    }
+    @supports (display: grid) {
+      header {
+        grid-area: header;
+      }
+  
+      nav {
+        grid-area: nav;
+        padding: 0;
+        text-align: left; 
+      }
+      nav ul {
+        flex-direction: column;
+        padding-top: 1em;
+        padding-left: 0; 
+      }
+  
+      #homehero{
+        grid-area: hero;
+      }
+  
+      main {
+        grid-area: main;
+      }
+  
+      footer {
+        grid-area: footer;
+      }
+  
+      .hero {
+        grid-area: hero;
+      }
+    }
+  }
+  
+  
+  
