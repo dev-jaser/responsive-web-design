@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>News Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navSidebar = document.querySelector('.nav-sidebar');
+      const closeBtn = document.querySelector('.close-btn');
+
+      // Toggle the navigation sidebar on button click
+      mobileMenuBtn.addEventListener('click', function () {
+        toggleNav();
+      });
+
+      // Close the navigation sidebar on close button click
+      closeBtn.addEventListener('click', function () {
+        toggleNav();
+      });
+
+      function toggleNav() {
+        navSidebar.classList.toggle('show');
+        // Toggle the show class on the close button
+        closeBtn.classList.toggle('show');
+      }
+    });
+
+
+  </script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="wrapper">
+      <header>
+        <div id="top-bar">
+          <img id="logo" src="assets/logo.svg">
+          <div class="mobile-menu-btn">
+            <img src="assets/icon-menu.svg">
+          </div>
+          <nav class="nav-sidebar">
+            <div class="close-btn">
+              <img src="assets/icon-menu-close.svg" class="close-icon">
+            </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="new.html">New</a></li>
+              <li><a href="popular.html">Popular</a></li>
+              <li><a href="trending.html">Trending</a></li>
+              <li><a href="categories.html">Categories</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="main-div">
+          <img id="main-image" src="assets/image-web-3-desktop.jpg">
+          <div id="main-1">
+            <h1 id="NEW">New</h1>
+            <h3 id="h3">Hydrogen Vs. Electric Cars</h3>
+            <p class="smallHeading1">Will hydrogen-fueled cars ever catch up to electric cars?</p>
+            <hr>
+            <h3 id="h3">The Downside of AI Artistry</h3>
+            <p class="smallHeading2">What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+            <h3 id="h3">Is VC Funding Drying Up?</h3>
+            <p class="smallHeading3">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+          <div id="main-2">
+            <span id="small-header">The Bright Future of Web 3.0?</span>
+          </div>
+          <div id="main-3">
+            <span id="grid-item-4">We dive into the next evolution of the web that claims to put the power of the
+              platforms
+              back
+              into the hands of the people. But is it really fulfilling its promise?</span>
+            <button name="button" type="submit">READ MORE</button>
+          </div>
+        </div>
+
+        <footer>
+          <div id="main-last" class="footer-grid">
+            <div class="footer-item">
+              <img name="footOne" class="footer-image" src="assets/image-retro-pcs.jpg">
+              <div class="footer-text">
+                <span id="num1">01</span>
+                <p id="footTwo"><span id="bold">Reviving Retro PCs</span><br> What happens when old PCs are given modern
+                  upgrades?</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <img name="footOne" class="footer-image" src="assets/image-top-laptops.jpg">
+              <div class="footer-text">
+                <span id="num1">02</span>
+                <p id="footTwo"><span id="bold">Top 10 laptops of 2023</span><br>Our best picks for various needs and
+                  budgets.</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <img name="footOne" class="footer-image" src="assets/image-gaming-growth.jpg">
+              <div class="footer-text">
+                <span id="num1">03</span>
+                <p id="footTwo"><span id="bold">The growth of gaming</span><br>How the pandemic has sparked fresh
+                  opportunities.</p>
+              </div>
+            </div>
+            <!-- Add more footer items as needed -->
+          </div>
+
+        </footer>
+      </main>
+    </div>
+  </div>
+  <script>
+    function toggleNav() {
+      var nav = document.querySelector('.nav-sidebar');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>
