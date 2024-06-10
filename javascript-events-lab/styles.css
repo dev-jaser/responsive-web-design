@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 28px;
+    font-family: sans-serif;
+    background-color: #7abeee;
+    color: #0a0a23;
+  }
+  
+  button {
+    font-size: 24px;
+    border: black 1.75px outset;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  input {
+    margin-left: 0;
+    width: 375px;
+    height: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e1f0fe;
+    color: #0a1234;
+    font-weight: 820;
+  }
+  
+  h1,
+  p,
+  h3 {
+    padding: 3px;
+    margin: 5.5px auto;
+    border: black .025px dashed;
+  }
+  
+  #problem2 {
+    border: none;
+  }
+  
+  #p2 {
+    padding-left: 5.5px;
+    border: black .025px dashed;
+  }

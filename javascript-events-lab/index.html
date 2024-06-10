@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 8</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 id="title">Problem 1</h1>
+  <h3>Output</h3>
+
+
+  <div id="p2">
+    <p id="problem2">Problem 2</p>
+    <button onclick="document.getElementById('problem2').innerHTML = 'Problem 2 - Button Clicked'" id="button">Button
+      2</button>
+  </div>
+
+
+  <p id="problem3">Problem 3</p>
+
+  <p id="problem5">Problem 5</p>
+  <h3>Instructions</h3>
+  <p>
+    1. When the page loads, display 'Lab 8 - Events' in the h1 with id="title".
+  </p>
+  <p>
+    2. When the user clicks the button with id="button", display 'Problem 2 - Button Clicked' in the div with
+    id="problem2".
+  </p>
+  <p>
+    3. As the user types in the input with id="input", display the value of the input in the div with id="problem3".
+    <br>
+    <input oninput="document.getElementById('problem3').innerHTML = this.value" type="text" id="input">
+  </p>
+  <p onclick="p4()">
+    4. When a user clicks on this paragraph element, popup an alert message that says, "Problem 4 - Paragraph Clicked"."
+  </p>
+  <p>
+    5. When a user clicks on the button with id="button5", add 1 to a page variable keeping track of how many times the
+    button was clicked. Display the value of the variable in the div with id="problem5".
+    <button onclick="incrementCounter()" id="button5">Button 5</button><br>
+  </p>
+  <script>
+
+    let clickCounter = 0;
+    function incrementCounter() {
+      clickCounter += 1;
+      document.getElementById('problem5').innerHTML = 'Problem 5 - Button Clicked ' + clickCounter + ' times';
+    }
+
+    function p4() {
+      alert('Problem 4 - Paragraph Clicked')
+    }
+
+    window.onload = function () {
+      document.getElementById('title').innerHTML = 'Lab 8 - Events';
+    }
+  </script>
+</body>
+
+</html>
