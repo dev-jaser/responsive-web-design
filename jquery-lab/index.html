@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 8</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1 id="title">Problem 1</h1>
+  <h3>Output</h3>
+  <p id="problem2">Problem 2</p>
+  <button id="button">Click for P2</button>
+  <p id="problem3">Problem 3</p>
+  <p id="problem5">Problem 5</p>
+  <button onclick="p5()" id="button5">Click for P5</button>
+  <h3>Instructions</h3>
+  <p>
+    1. Include jQuery in the head element above using a CDN.
+  </p>
+  <p>
+    2. When the page loads, display 'Lab 12 - jQuery' in the h1 with id="title" using jQuery. Remember, the selector
+    will be #title
+    <script>
+      $(document).ready(function () {
+        $("#title").text("Lab 12 - jQuery");
+      });
+    </script>
+  </p>
+  <p>
+    3. When the user clicks the button with id="button", display 'Problem 2 - Button Clicked' in the div with
+    id="problem2" using jQuery.
+  </p>
+  <script>
+    $(document).ready(function () {
+      $("#button").click(function () {
+        $("#problem2").text('Problem 2 - Button Clicked');
+      });
+    });
+  </script>
+  <p>
+    4. When a user clicks on this paragraph element, popup an alert message that says, "Problem 4 - Paragraph Clicked"
+    using jQuery.
+  </p>
+  <script>
+    $("#problem3").click(function () {
+      alert('Problem 4 - Paragraph Clicked')
+    });
+  </script>
+  <p>
+    5. When a user clicks on the button with id="button5", add 1 to a page variable keeping track of how many times the
+    button was clicked. Display the value of the variable in the div with id="problem5" using jQuery.
+  </p>
+  <script>
+    let p5Variable = 0;
+    $(document).ready(function () {
+      $("#button5").click(function () {
+        p5Variable += 1;
+        $("#problem5").text(p5Variable)
+      });
+    });
+  </script>
+</body>
+
+</html>
