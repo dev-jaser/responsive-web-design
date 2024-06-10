@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="styles.css" rel="stylesheet" />
+  <title>Lab 9 - Problem 1</title>
+  <style>
+    * {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="heading">Lab 9 - Problem 3</h1>
+  <button id="b3" type="button">BUTTON</button>
+  <!--  <button type="button" onclick="document.getElementById('heading').style.display='none'">BUTTON</button> -->
+
+ 
+  <script>
+      document.getElementById('b3').addEventListener('click', headingDisplay);
+
+      function headingDisplay() {
+        var heading = document.getElementById('heading');
+        if (heading.style.display === 'block') {
+          heading.style.display = 'none';
+        } else {
+          heading.style.display = 'block';
+        }
+      }
+    </script>
+</body>
+
+</html>

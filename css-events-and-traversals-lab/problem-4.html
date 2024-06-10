@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="styles.css" rel="stylesheet" />
+  <title>Lab 9 - Problem 1</title>
+  <style>
+    * {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="heading">Lab 9 - Problem 4</h1>
+  <input type="text" id="inputField">
+  <button id="addButton" type="button">Add Item</button>
+  <ul id="itemList">
+  </ul>
+  <button id="removeButton" type="button">Remove Last Item</button>
+
+  <script>
+    document.getElementById('addButton').addEventListener('click', addItem);
+
+    function addItem() {
+      var inputText = document.getElementById('inputField').value;
+      var itemList = document.getElementById('itemList');
+      var newItem = document.createElement('li');
+      newItem.textContent = inputText;
+      itemList.appendChild(newItem);
+    }
+
+    document.getElementById('removeButton').addEventListener('click', removeLastItem);
+
+    function removeLastItem() {
+      var itemList = document.getElementById('itemList');
+      if (itemList.children.length > 0) {
+        itemList.removeChild(itemList.lastElementChild);
+      }
+    }
+  </script>    
+</body>
+
+</html>
