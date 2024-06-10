@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="width:100%;">
+  <h1 id="h1">Lab 8 - JSON by Jaser G. Hasan
+  </h1>
+
+
+  <p id="s1">
+    <b>Step 1</b>
+  <blockquote>Given the following: '{"id":"IT-2320", "credits":4, "title":"Interactive Internet Programming"}'<br><br>
+    Parse it to a JSON object called courseObj using JSON.parse().<br><br>Then, use the JavaScript object called
+    courseObj to output the title using document.writeln().<br><br>
+    <script>
+      let courseObj = JSON.parse('{"id":"IT-2320", "credits":4, "title":"Interactive Internet Programming"}');
+      document.writeln("<b>TITLE: </b>" + courseObj.title);
+    </script>
+  </blockquote>
+  </p>
+
+
+  <p id="s2">
+    <b>Step 2</b>
+  <blockquote> Given:
+    const text = '[ "Document Object Model", "Language Constructs", "OOP", "Fetch API", "JSON" ]';<br><br>
+    First, use JSON.parse() to parse it to a JavaScript array.<br><br>Then, create a loop to output each of the values
+    in array using document.writeln() separated by a newline <br><br>
+
+    <script>
+      let stepTwoArr = JSON.parse('[ "Document Object Model", "Language Constructs", "OOP", "Fetch API", "JSON" ]');
+
+      for (let i = 0; i < stepTwoArr.length; i++) {
+
+        document.writeln("<b>" + "S2Array[" + i + "]:</b> " + stepTwoArr[i] + "<br>");
+      };
+    </script>
+
+  </blockquote>
+  </p>
+
+
+  <p id="s3">
+    <b>Step 3</b>
+  <blockquote id="step3">Given:
+    const myJSON = '{"id":"IT-2320", "credits":4, "title":"Interactive Internet Programming",
+    "description":"JavaScript"}';<br><br>Use JSON.parse() to parse it to an object.<br><br>Use dot (.) notation to
+    movidy the value of description to "An Introduction to JavaScript".<br><br>Use dot (.) notation to output all of the
+    values using a single document.writeln() statement.<br><br>
+    <script>
+      let myJSON = JSON.parse('{"id":"IT-2320", "credits":4, "title":"Interactive Internet Programming", "description": "JavaScript"}');
+      myJSON.description = "An Introduction to JavaScript";
+      document.writeln("<b>ID: </b>" + myJSON.id + "<br><b> Credits: </b>" + myJSON.credits + "<br><b> Title: </b>" + myJSON.title + "<br><b> Description: </b>" + myJSON.description + "<br><br>");
+
+    </script>
+  </blockquote>
+  </p>
+
+
+  <p id="s4">
+    <b>Step 4</b>
+  <blockquote id="step4">Create an array (called courseArray) and JSON string (called courseJSON) with the following
+    values:
+    IT-1025, IT-2310, IT-2320.<br><br>Use any technique to output all of the values in both the array and JSON
+    string.<br><br>In a comment, explain the technique used.<br><br>
+    <script>
+      let courseArray = ['IT-1025', 'IT-2310', 'IT-2320'];
+      let courseJSON = JSON.stringify(courseArray);
+      /* I created an object courseJSON and used JSON.stringify to parse the array: 'courseArray' into a JSONarray :: then I just used document.writeln() to output the values of each*/
+      document.getElementById('step4').innerHTML = "<b>CourseArray: </b>" + courseArray + "<br><b>CourseJSON: </b>" + courseJSON;
+    </script>
+  </blockquote>
+  </p>
+
+
+  <p id="s5">
+    <b>Step 5</b>
+  <blockquote id="step5">Using the "Array as JSON" example on https://www.w3schools.com/js/js_json_server.asp, read the
+    values from
+    courses.txt.<br><br>Output all of the values in the array.<br><br>
+
+    <script>
+      const xmlhttp = new XMLHttpRequest();
+      xmlhttp.onload = function () {
+        const myArr = JSON.parse(this.responseText);
+        let output = "";
+        for (let i = 0; i < myArr.length; i++) {
+          output += myArr[i] + "<br>";
+        }
+        document.getElementById("step5").innerHTML = output;
+      }
+      xmlhttp.open("GET", "courses.txt", true);
+      xmlhttp.send();
+    </script>
+
+  </blockquote>
+  </p>
+
+
+  <p id="s6">
+    <b>Step 6</b>
+  <blockquote id="step6">Using the "JSON From a Server" example on https://www.w3schools.com/js/js_json_server.asp,
+    request JSON
+    from the file it1025.txt.<br><br>Output the value of title using a document.writeln().<br><br>
+    <script>
+
+      const xmlHttp = new XMLHttpRequest();
+      xmlHttp.onload = function () {
+        if (this.status === 200) {
+          const data = JSON.parse(this.responseText);
+          const title = data.title;
+          document.getElementById('step6').innerHTML = data.title;
+        }
+      };
+
+      xmlHttp.open("GET", "it1025.txt", true);
+      xmlHttp.send();
+    </script>
+
+
+  </blockquote>
+  </p>
+  <br><br><br><br><br><br>
+</body>
+
+</html>
