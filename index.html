@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/select/2.0.2/css/select.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/autofill/2.7.0/css/autoFill.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/3.0.2/css/buttons.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+    <title>Lab 13</title>
+</head>
+
+<body>
+    <h1>Lab 13</h1>
+    <div class="container">
+        <table class="display compact" id="frameworks_table">
+            <thead id="thead">
+                <tr>
+                    <th>JavaScript Framework/API</th>
+                    <th>Link</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Angular</td>
+                    <td>
+                        <a href="angular.io">https://angular.io/</a>
+                    </td>
+                    <td>For developing single-page applications.</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>
+                        <a href="reactjs.org">https://reactjs.org/</a>
+                    </td>
+                    <td>JS library for building user interfaces based on components.</td>
+                </tr>
+                <tr>
+                    <td>Vue.js</td>
+                    <td>
+                        <a href="vuejs.org">https://vuejs.org/</a>
+                    </td>
+                    <td>JavaScript library for building user interfaces and single-page applications</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="input-container">
+            <label for="framework">JavaScript Framework/API:</label>
+            <input type="text" id="framework"><br>
+            <label for="link">Link:</label>
+            <input type="text" id="link"><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description">
+        </div>
+
+        <div class="btn-container">
+            <button id="addRowBtn">Add Row</button>
+            <button id="removeRowBtn">Remove Selected Row</button>
+            <button id="clearBtn">Clear Fields</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let table = $('#frameworks_table').DataTable({
+                layout: {
+                    topStart: 'buttons'
+                }
+            });
+
+            $('#addRowBtn').on('click', function () {
+                // Get input values
+                let framework = $('#framework').val();
+                let link = $('#link').val();
+                let description = $('#description').val();
+
+                table.row.add([framework, link, description, '']).draw();
+
+                $('#framework').val('');
+                $('#link').val('');
+                $('#description').val('');
+
+                toastr.success('Row added successfully');
+            });
+
+
+            $('#removeRowBtn').on('click', function () {
+                let selectedRow = table.row('.selected');
+                if (selectedRow.any()) {
+                    selectedRow.remove().draw();
+
+                    toastr.success('Row removed successfully');
+                } else {
+
+                    toastr.error('No row selected');
+                }
+            });
+
+
+            $('#clearBtn').on('click', function () {
+                $('#framework').val('');
+                $('#link').val('');
+                $('#description').val('');
+
+                toastr.info('Input fields cleared');
+            });
+
+
+            $('#frameworks_table tbody').on('click', 'tr', function () {
+                if ($(this).hasClass('selected')) {
+                    $(this).removeClass('selected');
+                } else {
+                    table.$('tr.selected').removeClass('selected');
+                    $(this).addClass('selected');
+                }
+            });
+        });
+
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-full-width",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
+
+
+</body>
+
+</html>
