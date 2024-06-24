@@ -1,50 +1,55 @@
 body {
     width: auto;
     height: auto;
-  }
-  
-  #index{
-    background-color: #0a0a23;
-    color: antiquewhite;
-  }
-  #index a:hover{
+}
+
+#index {
+    background-color: #001;
+    color: rgb(255, 255, 255);
+}
+
+#index a:hover {
     font-size: 24px;
-    background-color: #1A2311;
+    background-color: #1a2311;
     color: #f0ffff;
-  }
-  
-  html {
+}
+
+html {
     width: 100%;
     height: 100%;
     font-size: 18px;
-  }
-  
-  button {
+}
+
+button {
     font-size: 18px;
-  }
-  
-  #container {
-    border: .8px inset #0a0a23;
+}
+
+#container {
+    border: 0.8px inset #0a0a23;
     position: absolute;
     width: 50%;
-  }
-  
-  #animation {
+}
+
+#animation {
     width: fit-content;
     height: fit-content;
-    background-color: #eeFFFF;
+    background-color: #eeffff;
     border: 2.75px inset #0a0a23;
     position: relative;
-  }
-  
-  #animation p {
+}
+
+#animation p {
     border: 2.75px inset #0a0a23;
     width: fit-content;
     text-align: center;
-  }
-  
-  #container p {
+}
+
+#container p {
     width: fit-content;
     font-size: 18px;
     text-align: center;
-  }
+}
+
+.problems {
+    font-size: larger;
+}
