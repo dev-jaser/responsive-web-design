@@ -7,11 +7,11 @@ This project demonstrates various JavaScript event handling techniques through d
 *index.html*
 - Description: A single HTML file that showcases multiple JavaScript functionalities as part of Lab 8.
 - Features:
-    Title Update: The `<h1>` element with id="title" is updated to "Lab 8 - Events" when the page loads.
-    Button Click: Clicking the button with id="button" updates the content of the <div> with id="problem2" to "Problem 2 - Button Clicked".
-    Input Handling: As the user types in the input field with id="input", the <p> element with id="problem3" is updated to reflect the current input value.
+    Title Update: The `<h1>` element with `id="title"` is updated to "Lab 8 - Events" when the page loads.
+    Button Click: Clicking the button with `id="button"` updates the content of the `<div>` with `id="problem2"` to "Problem 2 - Button Clicked".
+    Input Handling: As the user types in the `input` field with `id="input"`, the `<p>` element with `id="problem3"` is updated to reflect the current input value.
     Paragraph Click: Clicking on a paragraph triggers an alert with the message "Problem 4 - Paragraph Clicked".
-    Button Counter: Clicking the button with id="button5" increments a counter and updates the <div> with id="problem5" to show how many times the button has been clicked.
+    Button Counter: Clicking the `button` with `id="button5"` increments a counter and updates the `<div>` with `id="problem5"` to show how many times the button has been clicked.
 
 ## Technologies Used
 - HTML: Structure of the web page.
