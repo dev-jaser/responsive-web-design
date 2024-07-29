@@ -25,3 +25,4 @@ To view this project click on this link: <> or copy and paste it into your brows
 - dev-jaser
 
 ## Preview
+![screenshot](image.png)
