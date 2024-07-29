@@ -19,7 +19,7 @@ This project demonstrates various JavaScript event handling techniques through d
 - JavaScript: Event handling and dynamic content updates.
 
 ## Installation Instructions
-To view this project click on this link: <> or copy and paste it into your browser.
+To view this project click on this link: https://92d7229c-68fa-452f-877a-0f0fdedabc68-00-3kwncojjptaut.picard.replit.dev/ or copy and paste it into your browser.
 
 ## Contributors
 - dev-jaser
