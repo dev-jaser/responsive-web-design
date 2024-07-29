@@ -1,7 +1,7 @@
 # Project Title: Nutrition Label
 
 ## Description
-A project that demonstrates the use of HTML and CSS to employ typography.
+This project demonstrates a styled nutrition label using HTML and CSS. The label includes sections for calories, daily values, and various nutrients.
 
 ## Technologies Used
 - HTML

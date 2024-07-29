@@ -1,7 +1,7 @@
 # Project Title: Cafe Menu
 
 ## Description
-A project that demonstrates the use of HTML/CSS to imploy text formatting elements. 
+This project showcases a simple and elegant menu for Camper Cafe, established in 2020. The menu lists a variety of coffee flavors and desserts with their corresponding prices, presented in a clean and visually appealing format.
 
 ## Technologies Used
 - HTML

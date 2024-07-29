@@ -1,7 +1,7 @@
 # Project Title: Flexbox Photo Gallery
 
 ## Description
-A project that demonstrates the use of flexbox and CSS styling.
+This project is a simple photo gallery built using CSS Flexbox. It showcases a collection of images in a responsive and neatly arranged grid layout.
 
 ## Technologies Used
 - HTML

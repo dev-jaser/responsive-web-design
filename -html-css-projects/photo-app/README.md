@@ -1,7 +1,7 @@
 # Project Title: Photo App
 
 ## Description
-This is a basic photo app created with HTML.
+A simple web app showcasing cat photos, lists of what cats love and hate, and a form for submitting cat photos.
 
 ## Technologies Used
 - HTML

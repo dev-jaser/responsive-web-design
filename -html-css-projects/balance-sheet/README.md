@@ -1,7 +1,7 @@
 # Project Title: Balance Sheet
 
 ## Description
-A project that demonstrates text formatting and styling through the use of HTML and CSS.
+This project presents a balance sheet for AcmeWidgetCorp, showcasing its financial status over three years: 2019, 2020, and 2021. The balance sheet is divided into sections for Assets, Liabilities, and Net Worth, providing a detailed overview of the company's financial health.
 
 ## Technologies Used
 - HTML

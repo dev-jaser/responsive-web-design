@@ -1,7 +1,7 @@
 # Project Title: Loading Screen Animation
 
 ## Description
-A project that demonstrates the use of HTML/CSS and JavaScript to create a loading screen animation. 
+This project demonstrates a simple loading animation with custom text. It features a rotating spinner animation and styled text for displaying a loading message.
 
 ## Technologies Used
 - HTML
