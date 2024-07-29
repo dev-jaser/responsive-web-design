@@ -5,31 +5,31 @@ This project consists of several HTML files showcasing different JavaScript func
 
 ## Files and Features
 *index.html*
-- Description: Provides an overview page with links to different problems and a textarea for user input.
+- Description: Provides an overview page with links to different problems and a `textarea` for user input.
 - Features:
     Links to problem1.html, problem2.html, problem3.html, and problem4.html.
-    A textarea for user input.
+    A `textarea` for user input.
 
 *problem1.html*
 - Description: Demonstrates changing the color of a text element using JavaScript.
 - Features:
-    A button that changes the color of a paragraph text to red when clicked.
+    A `button` that changes the color of a paragraph text to red when clicked.
 
 *problem2.html*
 - Description: Shows how to animate an element across the screen.
 - Features:
-    Animates a div element horizontally across the screen using requestAnimationFrame.
+    Animates a `div` element horizontally across the screen using requestAnimationFrame.
 
 *problem3.html*
 - Description: Toggles the visibility of a heading element when a button is clicked.
 - Features:
-    A button that toggles the display of a heading between block and none.
+    A `button` that toggles the display of a heading between block and none.
 
 *problem4.html*
 - Description: Allows users to add and remove list items dynamically.
 - Features:
-    An input field and a button to add items to a list.
-    A button to remove the last item from the list.
+    An `input` field and a button to add items to a list.
+    A `button` to remove the last item from the list.
 
 ## Technologies Used
 - HTML: Structure of the web pages.
